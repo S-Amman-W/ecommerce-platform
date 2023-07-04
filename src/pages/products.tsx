@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button } from '@mui/material'
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { useNavigate } from 'react-router-dom';
-import { rows } from '../utils/productData'
+import { rows } from '../utils/productData.tsx'
 
 const columns: GridColDef[] = [
   { 
