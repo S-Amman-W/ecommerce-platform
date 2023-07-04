@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button } from '@mui/material'
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { useNavigate } from 'react-router-dom';
-import { rows } from '../utils/productData.tsx'
+import { rows } from '../utils/productData'
 
 const columns: GridColDef[] = [
   { 
@@ -41,7 +41,7 @@ interface IItem {
 const Products = () => {
 
   const [cart, setCart] = useState<IItem[]>([]);
-  const [selectedRows, setSelectedRows] = React.useState([]);
+  const [selectedRows, setSelectedRows] = React.useState<IItem[]>([]);
 
   const navigate = useNavigate();
 
